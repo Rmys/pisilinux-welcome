@@ -307,14 +307,14 @@ class welcomeui(QWidget):
         self.googleButton.clicked.connect(self.googlePage)
         self.instagramButton.clicked.connect(self.instagramPage)
         self.githubButton.clicked.connect(self.githubPage)
-        self.slackButton.clicked.connect(self.slackPage)
+        #self.slackButton.clicked.connect(self.slackPage)
 
-        self.releaseNotesButton.clicked.connect(self.releaseNotes)
+        #self.releaseNotesButton.clicked.connect(self.releaseNotes)
         self.wikiButton.clicked.connect(self.wikiPage)
         self.forumButton.clicked.connect(self.forumPage)
         self.chatButton.clicked.connect(self.chatPages)
-        self.joinUsButton.clicked.connect(self.joinUsPage)
-        self.donateButton.clicked.connect(self.donatePage)
+        #self.joinUsButton.clicked.connect(self.joinUsPage)
+        #self.donateButton.clicked.connect(self.donatePage)
         self.startupCheckBox.clicked.connect(self.startupState)
         self.bugsButton.clicked.connect(self.issuesPage)
 
@@ -327,7 +327,7 @@ class welcomeui(QWidget):
 
         else:
             self.installationDocButton.setText(self.tr("Pisi Guide"))
-            self.installationDocButton.clicked.connect(self.pisiDocument)
+            #self.installationDocButton.clicked.connect(self.pisiDocument)
 
             self.installationHeader.setText(self.tr("Project"))
 
@@ -363,7 +363,7 @@ class welcomeui(QWidget):
         QDesktopServices.openUrl(QUrl("https://pisilinux.org/forum"))
 
     def chatPages(self):
-        QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
+        QDesktopServices.openUrl(QUrl("https://pisi.slack.com"))
 
     # TODO: Also for YALI
     def calamaresExec(self):
