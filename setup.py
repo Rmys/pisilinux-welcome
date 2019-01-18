@@ -36,6 +36,7 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
+         ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
          ('/usr/share/welcome/languages', langs)]
 
 setup(
